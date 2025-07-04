@@ -10,6 +10,12 @@ const HomePage: NextPage = () => {
 			name: 'chess',
 		},
 		{
+			id: 'colors',
+			href: 'https://hieudoanm.github.io/colors',
+			image: 'https://raw.githubusercontent.com/hieudoanm/colors/refs/heads/master/images/cover.png',
+			name: 'colors',
+		},
+		{
 			id: 'csv',
 			href: 'https://hieudoanm.github.io/csv',
 			image: 'https://raw.githubusercontent.com/hieudoanm/csv/refs/heads/master/images/cover.png',

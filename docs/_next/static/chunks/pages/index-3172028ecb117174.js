@@ -17,8 +17,8 @@
 			let n = r(8781),
 				o = r(5640),
 				s = n._(r(148)),
-				u = r(2480),
-				a = r(2402),
+				a = r(2480),
+				u = r(2402),
 				l = r(6939),
 				i = r(9925),
 				c = r(5686),
@@ -30,7 +30,7 @@
 			r(5446);
 			let g = new Set();
 			function b(e, t, r, n) {
-				if ((0, a.isLocalURL)(t)) {
+				if ((0, u.isLocalURL)(t)) {
 					if (!n.bypassPrefetchedCheck) {
 						let o = t + '%' + r + '%' + (void 0 !== n.locale ? n.locale : 'locale' in e ? e.locale : void 0);
 						if (g.has(o)) return;
@@ -70,8 +70,8 @@
 								let e = v(l);
 								return { href: e, as: g ? v(g) : e };
 							}
-							let [e, t] = (0, u.resolveHref)(L, l, !0);
-							return { href: e, as: g ? (0, u.resolveHref)(L, g) : t || e };
+							let [e, t] = (0, a.resolveHref)(L, l, !0);
+							return { href: e, as: g ? (0, a.resolveHref)(L, g) : t || e };
 						}, [L, l, g]),
 						A = s.default.useRef(S),
 						D = s.default.useRef(T);
@@ -95,7 +95,7 @@
 								E && n.props && 'function' == typeof n.props.onClick && n.props.onClick(e),
 								L &&
 									(e.defaultPrevented ||
-										(function (e, t, r, n, o, s, u, l, i) {
+										(function (e, t, r, n, o, s, a, l, i) {
 											let { nodeName: c } = e.currentTarget;
 											if (
 												!(
@@ -114,7 +114,7 @@
 													e.currentTarget.hasAttribute('download')
 												)
 											) {
-												if (!(0, a.isLocalURL)(r)) {
+												if (!(0, u.isLocalURL)(r)) {
 													o && (e.preventDefault(), location.replace(r));
 													return;
 												}
@@ -132,7 +132,7 @@
 															)
 																return;
 														}
-														let e = null == u || u;
+														let e = null == a || a;
 														'beforePopState' in t
 															? t[o ? 'replace' : 'push'](r, n, { shallow: s, locale: l, scroll: e })
 															: t[o ? 'replace' : 'push'](n || r, { scroll: e });
@@ -172,11 +172,11 @@
 		},
 		2128: (e, t, r) => {
 			'use strict';
-			(r.r(t), r.d(t, { default: () => u }));
+			(r.r(t), r.d(t, { default: () => a }));
 			var n = r(5640),
 				o = r(7864),
 				s = r.n(o);
-			let u = () =>
+			let a = () =>
 				(0, n.jsxs)(n.Fragment, {
 					children: [
 						(0, n.jsx)('nav', {
@@ -209,6 +209,12 @@
 												href: 'https://hieudoanm.github.io/chess',
 												image: 'https://raw.githubusercontent.com/hieudoanm/chess/refs/heads/master/images/cover.png',
 												name: 'chess',
+											},
+											{
+												id: 'colors',
+												href: 'https://hieudoanm.github.io/colors',
+												image: 'https://raw.githubusercontent.com/hieudoanm/colors/refs/heads/master/images/cover.png',
+												name: 'colors',
 											},
 											{
 												id: 'csv',
@@ -247,7 +253,7 @@
 												name: 'strings',
 											},
 										].map((e) => {
-											let { id: t = '', href: r = '', image: o = '', name: u = '' } = e;
+											let { id: t = '', href: r = '', image: o = '', name: a = '' } = e;
 											return (0, n.jsx)(
 												s(),
 												{
@@ -262,7 +268,7 @@
 															}),
 															(0, n.jsx)('div', {
 																className: 'border-t border-neutral-200 p-4',
-																children: (0, n.jsx)('h4', { className: 'text-lg font-black md:text-xl', children: u }),
+																children: (0, n.jsx)('h4', { className: 'text-lg font-black md:text-xl', children: a }),
 															}),
 														],
 													}),
@@ -363,8 +369,8 @@
 			let n = r(148),
 				o = r(9780),
 				s = 'function' == typeof IntersectionObserver,
-				u = new Map(),
-				a = [];
+				a = new Map(),
+				u = [];
 			function l(e) {
 				let { rootRef: t, rootMargin: r, disabled: l } = e,
 					i = l || !s,
@@ -387,8 +393,8 @@
 									} = (function (e) {
 										let t,
 											r = { root: e.root || null, margin: e.rootMargin || '' },
-											n = a.find((e) => e.root === r.root && e.margin === r.margin);
-										if (n && (t = u.get(n))) return t;
+											n = u.find((e) => e.root === r.root && e.margin === r.margin);
+										if (n && (t = a.get(n))) return t;
 										let o = new Map();
 										return (
 											(t = {
@@ -402,8 +408,8 @@
 												}, e),
 												elements: o,
 											}),
-											a.push(r),
-											u.set(r, t),
+											u.push(r),
+											a.set(r, t),
 											t
 										);
 									})(r);
@@ -412,9 +418,9 @@
 										o.observe(e),
 										function () {
 											if ((s.delete(e), o.unobserve(e), 0 === s.size)) {
-												(o.disconnect(), u.delete(n));
-												let e = a.findIndex((e) => e.root === n.root && e.margin === n.margin);
-												e > -1 && a.splice(e, 1);
+												(o.disconnect(), a.delete(n));
+												let e = u.findIndex((e) => e.root === n.root && e.margin === n.margin);
+												e > -1 && u.splice(e, 1);
 											}
 										}
 									);
