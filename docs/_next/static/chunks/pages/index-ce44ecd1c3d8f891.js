@@ -26,15 +26,15 @@
 				d = r(7233),
 				p = r(4434),
 				h = r(5767),
-				b = r(6492);
+				m = r(6492);
 			r(5446);
-			let m = new Set();
+			let b = new Set();
 			function g(e, t, r, n) {
 				if ((0, a.isLocalURL)(t)) {
 					if (!n.bypassPrefetchedCheck) {
 						let o = t + '%' + r + '%' + (void 0 !== n.locale ? n.locale : 'locale' in e ? e.locale : void 0);
-						if (m.has(o)) return;
-						m.add(o);
+						if (b.has(o)) return;
+						b.add(o);
 					}
 					e.prefetch(t, r, n).catch((e) => {});
 				}
@@ -47,7 +47,7 @@
 						n,
 						{
 							href: s,
-							as: m,
+							as: b,
 							children: y,
 							prefetch: _ = null,
 							passHref: j,
@@ -68,11 +68,11 @@
 						{ href: S, as: T } = u.default.useMemo(() => {
 							if (!L) {
 								let e = v(s);
-								return { href: e, as: m ? v(m) : e };
+								return { href: e, as: b ? v(b) : e };
 							}
 							let [e, t] = (0, l.resolveHref)(L, s, !0);
-							return { href: e, as: m ? (0, l.resolveHref)(L, m) : t || e };
-						}, [L, s, m]),
+							return { href: e, as: b ? (0, l.resolveHref)(L, b) : t || e };
+						}, [L, s, b]),
 						D = u.default.useRef(S),
 						A = u.default.useRef(T);
 					N && (n = u.default.Children.only(r));
@@ -84,7 +84,7 @@
 							},
 							[T, S, X, K],
 						),
-						z = (0, b.useMergedRef)(q, U);
+						z = (0, m.useMergedRef)(q, U);
 					u.default.useEffect(() => {
 						L && H && I && g(L, S, T, { locale: P });
 					}, [T, S, H, P, I, null == L ? void 0 : L.locale, L]);
@@ -191,6 +191,12 @@
 							children: (0, n.jsx)('div', {
 								className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3',
 								children: [
+									{
+										id: 'chess',
+										href: 'https://hieudoanm.github.io/chess',
+										image: 'https://raw.githubusercontent.com/hieudoanm/chess/refs/heads/master/images/cover.png',
+										name: 'chess',
+									},
 									{
 										id: 'numbers',
 										href: 'https://hieudoanm.github.io/numbers',
