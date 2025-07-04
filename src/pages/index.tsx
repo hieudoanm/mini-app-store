@@ -16,6 +16,12 @@ const HomePage: NextPage = () => {
 			name: 'csv',
 		},
 		{
+			id: 'json',
+			href: 'https://hieudoanm.github.io/json',
+			image: 'https://raw.githubusercontent.com/hieudoanm/json/refs/heads/master/images/cover.png',
+			name: 'json',
+		},
+		{
 			id: 'numbers',
 			href: 'https://hieudoanm.github.io/numbers',
 			image: 'https://raw.githubusercontent.com/hieudoanm/numbers/refs/heads/master/images/cover.png',
