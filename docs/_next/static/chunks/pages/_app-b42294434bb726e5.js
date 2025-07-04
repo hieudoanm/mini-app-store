@@ -13,17 +13,20 @@
 			var t = s(7332),
 				n = s.n(t),
 				c = s(8580),
-				_ = s.n(c),
-				r = s(4626),
-				i = s.n(r);
+				r = s.n(c),
+				_ = s(4626),
+				i = s.n(_);
 			let o = (a) => {
 				let { Component: e, pageProps: s } = a;
 				return (0, l.jsxs)(l.Fragment, {
 					children: [
 						(0, l.jsx)(i(), { children: (0, l.jsx)('title', { children: 'Mini App Store' }) }),
 						(0, l.jsx)('div', {
-							className: ''.concat(n().className, ' ').concat(_().className),
-							children: (0, l.jsx)(e, { ...s }),
+							className: ''.concat(n().className, ' ').concat(r().className),
+							children: (0, l.jsx)('div', {
+								className: 'bg-neutral-900 text-neutral-100',
+								children: (0, l.jsx)(e, { ...s }),
+							}),
 						}),
 					],
 				});
