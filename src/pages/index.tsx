@@ -25,6 +25,12 @@ const HomePage: NextPage = () => {
 							name: 're(d)act',
 						},
 						{
+							id: 'status',
+							href: 'https://hieudoanm.github.io/status',
+							image: 'https://raw.githubusercontent.com/hieudoanm/status/refs/heads/master/images/cover.png',
+							name: 'status',
+						},
+						{
 							id: 'strings',
 							href: 'https://hieudoanm.github.io/strings',
 							image: 'https://raw.githubusercontent.com/hieudoanm/strings/refs/heads/master/images/cover.png',

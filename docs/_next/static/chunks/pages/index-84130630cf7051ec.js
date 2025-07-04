@@ -16,8 +16,8 @@
 				}));
 			let n = r(8781),
 				o = r(5640),
-				l = n._(r(148)),
-				u = r(2480),
+				u = n._(r(148)),
+				l = r(2480),
 				a = r(2402),
 				s = r(6939),
 				i = r(9925),
@@ -28,13 +28,13 @@
 				h = r(5767),
 				b = r(6492);
 			r(5446);
-			let g = new Set();
-			function m(e, t, r, n) {
+			let m = new Set();
+			function g(e, t, r, n) {
 				if ((0, a.isLocalURL)(t)) {
 					if (!n.bypassPrefetchedCheck) {
 						let o = t + '%' + r + '%' + (void 0 !== n.locale ? n.locale : 'locale' in e ? e.locale : void 0);
-						if (g.has(o)) return;
-						g.add(o);
+						if (m.has(o)) return;
+						m.add(o);
 					}
 					e.prefetch(t, r, n).catch((e) => {});
 				}
@@ -42,12 +42,12 @@
 			function v(e) {
 				return 'string' == typeof e ? e : (0, s.formatUrl)(e);
 			}
-			let y = l.default.forwardRef(function (e, t) {
+			let y = u.default.forwardRef(function (e, t) {
 					let r,
 						n,
 						{
 							href: s,
-							as: g,
+							as: m,
 							children: y,
 							prefetch: _ = null,
 							passHref: j,
@@ -56,37 +56,37 @@
 							scroll: O,
 							locale: P,
 							onClick: k,
-							onNavigate: C,
-							onMouseEnter: w,
+							onNavigate: w,
+							onMouseEnter: C,
 							onTouchStart: E,
 							legacyBehavior: N = !1,
 							...R
 						} = e;
 					((r = y), N && ('string' == typeof r || 'number' == typeof r) && (r = (0, o.jsx)('a', { children: r })));
-					let L = l.default.useContext(f.RouterContext),
+					let L = u.default.useContext(f.RouterContext),
 						I = !1 !== _,
-						{ href: S, as: T } = l.default.useMemo(() => {
+						{ href: S, as: T } = u.default.useMemo(() => {
 							if (!L) {
 								let e = v(s);
-								return { href: e, as: g ? v(g) : e };
+								return { href: e, as: m ? v(m) : e };
 							}
-							let [e, t] = (0, u.resolveHref)(L, s, !0);
-							return { href: e, as: g ? (0, u.resolveHref)(L, g) : t || e };
-						}, [L, s, g]),
-						D = l.default.useRef(S),
-						A = l.default.useRef(T);
-					N && (n = l.default.Children.only(r));
+							let [e, t] = (0, l.resolveHref)(L, s, !0);
+							return { href: e, as: m ? (0, l.resolveHref)(L, m) : t || e };
+						}, [L, s, m]),
+						D = u.default.useRef(S),
+						A = u.default.useRef(T);
+					N && (n = u.default.Children.only(r));
 					let U = N ? n && 'object' == typeof n && n.ref : t,
 						[K, H, X] = (0, d.useIntersection)({ rootMargin: '200px' }),
-						q = l.default.useCallback(
+						q = u.default.useCallback(
 							(e) => {
 								((A.current !== T || D.current !== S) && (X(), (A.current = T), (D.current = S)), K(e));
 							},
 							[T, S, X, K],
 						),
 						z = (0, b.useMergedRef)(q, U);
-					l.default.useEffect(() => {
-						L && H && I && m(L, S, T, { locale: P });
+					u.default.useEffect(() => {
+						L && H && I && g(L, S, T, { locale: P });
 					}, [T, S, H, P, I, null == L ? void 0 : L.locale, L]);
 					let B = {
 						ref: z,
@@ -95,7 +95,7 @@
 								N && n.props && 'function' == typeof n.props.onClick && n.props.onClick(e),
 								L &&
 									(e.defaultPrevented ||
-										(function (e, t, r, n, o, l, u, s, i) {
+										(function (e, t, r, n, o, u, l, s, i) {
 											let { nodeName: c } = e.currentTarget;
 											if (
 												!(
@@ -132,23 +132,23 @@
 															)
 																return;
 														}
-														let e = null == u || u;
+														let e = null == l || l;
 														'beforePopState' in t
-															? t[o ? 'replace' : 'push'](r, n, { shallow: l, locale: s, scroll: e })
+															? t[o ? 'replace' : 'push'](r, n, { shallow: u, locale: s, scroll: e })
 															: t[o ? 'replace' : 'push'](n || r, { scroll: e });
 													})());
 											}
-										})(e, L, S, T, x, M, O, P, C)));
+										})(e, L, S, T, x, M, O, P, w)));
 						},
 						onMouseEnter(e) {
-							(N || 'function' != typeof w || w(e),
+							(N || 'function' != typeof C || C(e),
 								N && n.props && 'function' == typeof n.props.onMouseEnter && n.props.onMouseEnter(e),
-								L && m(L, S, T, { locale: P, priority: !0, bypassPrefetchedCheck: !0 }));
+								L && g(L, S, T, { locale: P, priority: !0, bypassPrefetchedCheck: !0 }));
 						},
 						onTouchStart: function (e) {
 							(N || 'function' != typeof E || E(e),
 								N && n.props && 'function' == typeof n.props.onTouchStart && n.props.onTouchStart(e),
-								L && m(L, S, T, { locale: P, priority: !0, bypassPrefetchedCheck: !0 }));
+								L && g(L, S, T, { locale: P, priority: !0, bypassPrefetchedCheck: !0 }));
 						},
 					};
 					if ((0, i.isAbsoluteUrl)(T)) B.href = T;
@@ -159,10 +159,10 @@
 								(0, p.getDomainLocale)(T, e, null == L ? void 0 : L.locales, null == L ? void 0 : L.domainLocales)) ||
 							(0, h.addBasePath)((0, c.addLocale)(T, e, null == L ? void 0 : L.defaultLocale));
 					}
-					return N ? l.default.cloneElement(n, B) : (0, o.jsx)('a', { ...R, ...B, children: r });
+					return N ? u.default.cloneElement(n, B) : (0, o.jsx)('a', { ...R, ...B, children: r });
 				}),
-				_ = (0, l.createContext)({ pending: !1 }),
-				j = () => (0, l.useContext)(_),
+				_ = (0, u.createContext)({ pending: !1 }),
+				j = () => (0, u.useContext)(_),
 				x = y;
 			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
@@ -172,11 +172,11 @@
 		},
 		2128: (e, t, r) => {
 			'use strict';
-			(r.r(t), r.d(t, { default: () => u }));
+			(r.r(t), r.d(t, { default: () => l }));
 			var n = r(5640),
 				o = r(7864),
-				l = r.n(o);
-			let u = () =>
+				u = r.n(o);
+			let l = () =>
 				(0, n.jsxs)(n.Fragment, {
 					children: [
 						(0, n.jsx)('nav', {
@@ -204,15 +204,21 @@
 										name: 're(d)act',
 									},
 									{
+										id: 'status',
+										href: 'https://hieudoanm.github.io/status',
+										image: 'https://raw.githubusercontent.com/hieudoanm/status/refs/heads/master/images/cover.png',
+										name: 'status',
+									},
+									{
 										id: 'strings',
 										href: 'https://hieudoanm.github.io/strings',
 										image: 'https://raw.githubusercontent.com/hieudoanm/strings/refs/heads/master/images/cover.png',
 										name: 'strings',
 									},
 								].map((e) => {
-									let { id: t = '', href: r = '', image: o = '', name: u = '' } = e;
+									let { id: t = '', href: r = '', image: o = '', name: l = '' } = e;
 									return (0, n.jsx)(
-										l(),
+										u(),
 										{
 											href: r,
 											target: '_blank',
@@ -225,7 +231,7 @@
 													}),
 													(0, n.jsx)('div', {
 														className: 'border-t border-neutral-200 p-4',
-														children: (0, n.jsx)('h4', { className: 'text-lg font-black md:text-xl', children: u }),
+														children: (0, n.jsx)('h4', { className: 'text-lg font-black md:text-xl', children: l }),
 													}),
 												],
 											}),
@@ -288,12 +294,12 @@
 							e && ((r.current = null), e());
 							let t = o.current;
 							t && ((o.current = null), t());
-						} else (e && (r.current = l(e, n)), t && (o.current = l(t, n)));
+						} else (e && (r.current = u(e, n)), t && (o.current = u(t, n)));
 					},
 					[e, t],
 				);
 			}
-			function l(e, t) {
+			function u(e, t) {
 				if ('function' != typeof e)
 					return (
 						(e.current = t),
@@ -323,12 +329,12 @@
 				}));
 			let n = r(148),
 				o = r(9780),
-				l = 'function' == typeof IntersectionObserver,
-				u = new Map(),
+				u = 'function' == typeof IntersectionObserver,
+				l = new Map(),
 				a = [];
 			function s(e) {
 				let { rootRef: t, rootMargin: r, disabled: s } = e,
-					i = s || !l,
+					i = s || !u,
 					[c, f] = (0, n.useState)(!1),
 					d = (0, n.useRef)(null),
 					p = (0, n.useCallback)((e) => {
@@ -336,7 +342,7 @@
 					}, []);
 				return (
 					(0, n.useEffect)(() => {
-						if (l) {
+						if (u) {
 							if (i || c) return;
 							let e = d.current;
 							if (e && e.tagName)
@@ -344,12 +350,12 @@
 									let {
 										id: n,
 										observer: o,
-										elements: l,
+										elements: u,
 									} = (function (e) {
 										let t,
 											r = { root: e.root || null, margin: e.rootMargin || '' },
 											n = a.find((e) => e.root === r.root && e.margin === r.margin);
-										if (n && (t = u.get(n))) return t;
+										if (n && (t = l.get(n))) return t;
 										let o = new Map();
 										return (
 											(t = {
@@ -364,16 +370,16 @@
 												elements: o,
 											}),
 											a.push(r),
-											u.set(r, t),
+											l.set(r, t),
 											t
 										);
 									})(r);
 									return (
-										l.set(e, t),
+										u.set(e, t),
 										o.observe(e),
 										function () {
-											if ((l.delete(e), o.unobserve(e), 0 === l.size)) {
-												(o.disconnect(), u.delete(n));
+											if ((u.delete(e), o.unobserve(e), 0 === u.size)) {
+												(o.disconnect(), l.delete(n));
 												let e = a.findIndex((e) => e.root === n.root && e.margin === n.margin);
 												e > -1 && a.splice(e, 1);
 											}
