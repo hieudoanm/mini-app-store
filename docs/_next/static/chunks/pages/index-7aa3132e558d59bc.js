@@ -17,8 +17,8 @@
 			let n = r(8781),
 				o = r(5640),
 				s = n._(r(148)),
-				u = r(2480),
-				a = r(2402),
+				a = r(2480),
+				u = r(2402),
 				i = r(6939),
 				l = r(9925),
 				c = r(5686),
@@ -30,7 +30,7 @@
 			r(5446);
 			let g = new Set();
 			function b(e, t, r, n) {
-				if ((0, a.isLocalURL)(t)) {
+				if ((0, u.isLocalURL)(t)) {
 					if (!n.bypassPrefetchedCheck) {
 						let o = t + '%' + r + '%' + (void 0 !== n.locale ? n.locale : 'locale' in e ? e.locale : void 0);
 						if (g.has(o)) return;
@@ -52,10 +52,10 @@
 							prefetch: x = null,
 							passHref: j,
 							replace: _,
-							shallow: M,
+							shallow: k,
 							scroll: w,
-							locale: O,
-							onClick: k,
+							locale: M,
+							onClick: O,
 							onNavigate: P,
 							onMouseEnter: C,
 							onTouchStart: N,
@@ -70,8 +70,8 @@
 								let e = v(i);
 								return { href: e, as: g ? v(g) : e };
 							}
-							let [e, t] = (0, u.resolveHref)(L, i, !0);
-							return { href: e, as: g ? (0, u.resolveHref)(L, g) : t || e };
+							let [e, t] = (0, a.resolveHref)(L, i, !0);
+							return { href: e, as: g ? (0, a.resolveHref)(L, g) : t || e };
 						}, [L, i, g]),
 						A = s.default.useRef(S),
 						D = s.default.useRef(T);
@@ -86,16 +86,16 @@
 						),
 						z = (0, m.useMergedRef)(q, U);
 					s.default.useEffect(() => {
-						L && H && I && b(L, S, T, { locale: O });
-					}, [T, S, H, O, I, null == L ? void 0 : L.locale, L]);
+						L && H && I && b(L, S, T, { locale: M });
+					}, [T, S, H, M, I, null == L ? void 0 : L.locale, L]);
 					let B = {
 						ref: z,
 						onClick(e) {
-							(E || 'function' != typeof k || k(e),
+							(E || 'function' != typeof O || O(e),
 								E && n.props && 'function' == typeof n.props.onClick && n.props.onClick(e),
 								L &&
 									(e.defaultPrevented ||
-										(function (e, t, r, n, o, s, u, i, l) {
+										(function (e, t, r, n, o, s, a, i, l) {
 											let { nodeName: c } = e.currentTarget;
 											if (
 												!(
@@ -114,7 +114,7 @@
 													e.currentTarget.hasAttribute('download')
 												)
 											) {
-												if (!(0, a.isLocalURL)(r)) {
+												if (!(0, u.isLocalURL)(r)) {
 													o && (e.preventDefault(), location.replace(r));
 													return;
 												}
@@ -132,28 +132,28 @@
 															)
 																return;
 														}
-														let e = null == u || u;
+														let e = null == a || a;
 														'beforePopState' in t
 															? t[o ? 'replace' : 'push'](r, n, { shallow: s, locale: i, scroll: e })
 															: t[o ? 'replace' : 'push'](n || r, { scroll: e });
 													})());
 											}
-										})(e, L, S, T, _, M, w, O, P)));
+										})(e, L, S, T, _, k, w, M, P)));
 						},
 						onMouseEnter(e) {
 							(E || 'function' != typeof C || C(e),
 								E && n.props && 'function' == typeof n.props.onMouseEnter && n.props.onMouseEnter(e),
-								L && b(L, S, T, { locale: O, priority: !0, bypassPrefetchedCheck: !0 }));
+								L && b(L, S, T, { locale: M, priority: !0, bypassPrefetchedCheck: !0 }));
 						},
 						onTouchStart: function (e) {
 							(E || 'function' != typeof N || N(e),
 								E && n.props && 'function' == typeof n.props.onTouchStart && n.props.onTouchStart(e),
-								L && b(L, S, T, { locale: O, priority: !0, bypassPrefetchedCheck: !0 }));
+								L && b(L, S, T, { locale: M, priority: !0, bypassPrefetchedCheck: !0 }));
 						},
 					};
 					if ((0, l.isAbsoluteUrl)(T)) B.href = T;
 					else if (!E || j || ('a' === n.type && !('href' in n.props))) {
-						let e = void 0 !== O ? O : null == L ? void 0 : L.locale;
+						let e = void 0 !== M ? M : null == L ? void 0 : L.locale;
 						B.href =
 							((null == L ? void 0 : L.isLocaleDomain) &&
 								(0, h.getDomainLocale)(T, e, null == L ? void 0 : L.locales, null == L ? void 0 : L.domainLocales)) ||
@@ -172,11 +172,11 @@
 		},
 		2128: (e, t, r) => {
 			'use strict';
-			(r.r(t), r.d(t, { default: () => u }));
+			(r.r(t), r.d(t, { default: () => a }));
 			var n = r(5640),
 				o = r(7864),
 				s = r.n(o);
-			let u = () => {
+			let a = () => {
 				let e = [
 					{
 						id: 'calculator',
@@ -191,6 +191,13 @@
 						github: 'https://github.com/hieudoanm/chess',
 						image: 'https://raw.githubusercontent.com/hieudoanm/chess/refs/heads/master/images/cover.png',
 						name: 'chess',
+					},
+					{
+						id: 'clock',
+						href: 'https://hieudoanm.github.io/clock',
+						github: 'https://github.com/hieudoanm/clock',
+						image: 'https://raw.githubusercontent.com/hieudoanm/clock/refs/heads/master/images/cover.png',
+						name: 'clock',
 					},
 					{
 						id: 'colors',
@@ -272,7 +279,7 @@
 									(0, n.jsx)('div', {
 										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3',
 										children: e.map((e) => {
-											let { id: t = '', href: r = '', image: o = '', name: u = '', github: a = '' } = e;
+											let { id: t = '', href: r = '', image: o = '', name: a = '', github: u = '' } = e;
 											return (0, n.jsxs)(
 												'div',
 												{
@@ -289,9 +296,9 @@
 														(0, n.jsxs)('div', {
 															className: 'flex items-center justify-between border-t border-neutral-800 p-4',
 															children: [
-																(0, n.jsx)('h4', { className: 'text-lg font-black md:text-xl', children: u }),
+																(0, n.jsx)('h4', { className: 'text-lg font-black md:text-xl', children: a }),
 																(0, n.jsx)(s(), {
-																	href: a,
+																	href: u,
 																	className: 'text-sm underline underline-offset-4',
 																	target: '_blank',
 																	children: (0, n.jsx)('p', { children: 'GitHub' }),
@@ -397,8 +404,8 @@
 			let n = r(148),
 				o = r(9780),
 				s = 'function' == typeof IntersectionObserver,
-				u = new Map(),
-				a = [];
+				a = new Map(),
+				u = [];
 			function i(e) {
 				let { rootRef: t, rootMargin: r, disabled: i } = e,
 					l = i || !s,
@@ -421,8 +428,8 @@
 									} = (function (e) {
 										let t,
 											r = { root: e.root || null, margin: e.rootMargin || '' },
-											n = a.find((e) => e.root === r.root && e.margin === r.margin);
-										if (n && (t = u.get(n))) return t;
+											n = u.find((e) => e.root === r.root && e.margin === r.margin);
+										if (n && (t = a.get(n))) return t;
 										let o = new Map();
 										return (
 											(t = {
@@ -436,8 +443,8 @@
 												}, e),
 												elements: o,
 											}),
-											a.push(r),
-											u.set(r, t),
+											u.push(r),
+											a.set(r, t),
 											t
 										);
 									})(r);
@@ -446,9 +453,9 @@
 										o.observe(e),
 										function () {
 											if ((s.delete(e), o.unobserve(e), 0 === s.size)) {
-												(o.disconnect(), u.delete(n));
-												let e = a.findIndex((e) => e.root === n.root && e.margin === n.margin);
-												e > -1 && a.splice(e, 1);
+												(o.disconnect(), a.delete(n));
+												let e = u.findIndex((e) => e.root === n.root && e.margin === n.margin);
+												e > -1 && u.splice(e, 1);
 											}
 										}
 									);

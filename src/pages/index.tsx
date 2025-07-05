@@ -18,6 +18,13 @@ const HomePage: NextPage = () => {
 			name: 'chess',
 		},
 		{
+			id: 'clock',
+			href: 'https://hieudoanm.github.io/clock',
+			github: 'https://github.com/hieudoanm/clock',
+			image: 'https://raw.githubusercontent.com/hieudoanm/clock/refs/heads/master/images/cover.png',
+			name: 'clock',
+		},
+		{
 			id: 'colors',
 			href: 'https://hieudoanm.github.io/colors',
 			github: 'https://github.com/hieudoanm/colors',
