@@ -179,6 +179,13 @@
 			let u = () => {
 				let e = [
 					{
+						id: 'calculator',
+						href: 'https://hieudoanm.github.io/calculator',
+						github: 'https://github.com/hieudoanm/calculator',
+						image: 'https://raw.githubusercontent.com/hieudoanm/calculator/refs/heads/master/images/cover.png',
+						name: 'calculator',
+					},
+					{
 						id: 'chess',
 						href: 'https://hieudoanm.github.io/chess',
 						github: 'https://github.com/hieudoanm/chess',
@@ -212,13 +219,6 @@
 						github: 'https://github.com/hieudoanm/json',
 						image: 'https://raw.githubusercontent.com/hieudoanm/json/refs/heads/master/images/cover.png',
 						name: 'json',
-					},
-					{
-						id: 'numbers',
-						href: 'https://hieudoanm.github.io/numbers',
-						github: 'https://github.com/hieudoanm/numbers',
-						image: 'https://raw.githubusercontent.com/hieudoanm/numbers/refs/heads/master/images/cover.png',
-						name: 'numbers',
 					},
 					{
 						id: 're(d)act',
