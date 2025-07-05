@@ -60,6 +60,13 @@ const HomePage: NextPage = () => {
 			name: 'json',
 		},
 		{
+			id: 'markup',
+			href: 'https://hieudoanm.github.io/markup',
+			github: 'https://github.com/hieudoanm/markup',
+			image: 'https://raw.githubusercontent.com/hieudoanm/markup/refs/heads/master/images/cover.png',
+			name: 'markup',
+		},
+		{
 			id: 're(d)act',
 			href: 'https://hieudoanm.github.io/redact',
 			github: 'https://github.com/hieudoanm/redact',
