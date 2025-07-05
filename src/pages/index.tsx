@@ -93,7 +93,9 @@ const HomePage: NextPage = () => {
 					<div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
 						{miniApps.map(({ id = '', href = '', image = '', name = '', github = '' }) => {
 							return (
-								<div key={id} className="overflow-hidden rounded-2xl border border-neutral-800">
+								<div
+									key={id}
+									className="overflow-hidden rounded-2xl border border-neutral-800 shadow-none shadow-neutral-100/10 transition-all hover:shadow-2xl">
 									<Link href={href} target="_blank">
 										<div
 											className="aspect-video bg-contain bg-center bg-no-repeat"

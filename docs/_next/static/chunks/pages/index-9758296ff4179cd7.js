@@ -16,8 +16,8 @@
 				}));
 			let n = r(8781),
 				o = r(5640),
-				s = n._(r(148)),
-				a = r(2480),
+				a = n._(r(148)),
+				s = r(2480),
 				u = r(2402),
 				i = r(6939),
 				l = r(9925),
@@ -42,18 +42,18 @@
 			function v(e) {
 				return 'string' == typeof e ? e : (0, i.formatUrl)(e);
 			}
-			let y = s.default.forwardRef(function (e, t) {
+			let x = a.default.forwardRef(function (e, t) {
 					let r,
 						n,
 						{
 							href: i,
 							as: g,
-							children: y,
-							prefetch: x = null,
+							children: x,
+							prefetch: y = null,
 							passHref: j,
 							replace: _,
-							shallow: k,
-							scroll: w,
+							shallow: w,
+							scroll: k,
 							locale: M,
 							onClick: O,
 							onNavigate: P,
@@ -62,30 +62,30 @@
 							legacyBehavior: E = !1,
 							...R
 						} = e;
-					((r = y), E && ('string' == typeof r || 'number' == typeof r) && (r = (0, o.jsx)('a', { children: r })));
-					let L = s.default.useContext(d.RouterContext),
-						I = !1 !== x,
-						{ href: S, as: T } = s.default.useMemo(() => {
+					((r = x), E && ('string' == typeof r || 'number' == typeof r) && (r = (0, o.jsx)('a', { children: r })));
+					let L = a.default.useContext(d.RouterContext),
+						I = !1 !== y,
+						{ href: S, as: T } = a.default.useMemo(() => {
 							if (!L) {
 								let e = v(i);
 								return { href: e, as: g ? v(g) : e };
 							}
-							let [e, t] = (0, a.resolveHref)(L, i, !0);
-							return { href: e, as: g ? (0, a.resolveHref)(L, g) : t || e };
+							let [e, t] = (0, s.resolveHref)(L, i, !0);
+							return { href: e, as: g ? (0, s.resolveHref)(L, g) : t || e };
 						}, [L, i, g]),
-						A = s.default.useRef(S),
-						D = s.default.useRef(T);
-					E && (n = s.default.Children.only(r));
+						A = a.default.useRef(S),
+						D = a.default.useRef(T);
+					E && (n = a.default.Children.only(r));
 					let U = E ? n && 'object' == typeof n && n.ref : t,
 						[K, H, X] = (0, f.useIntersection)({ rootMargin: '200px' }),
-						q = s.default.useCallback(
+						q = a.default.useCallback(
 							(e) => {
 								((D.current !== T || A.current !== S) && (X(), (D.current = T), (A.current = S)), K(e));
 							},
 							[T, S, X, K],
 						),
 						z = (0, m.useMergedRef)(q, U);
-					s.default.useEffect(() => {
+					a.default.useEffect(() => {
 						L && H && I && b(L, S, T, { locale: M });
 					}, [T, S, H, M, I, null == L ? void 0 : L.locale, L]);
 					let B = {
@@ -95,7 +95,7 @@
 								E && n.props && 'function' == typeof n.props.onClick && n.props.onClick(e),
 								L &&
 									(e.defaultPrevented ||
-										(function (e, t, r, n, o, s, a, i, l) {
+										(function (e, t, r, n, o, a, s, i, l) {
 											let { nodeName: c } = e.currentTarget;
 											if (
 												!(
@@ -132,13 +132,13 @@
 															)
 																return;
 														}
-														let e = null == a || a;
+														let e = null == s || s;
 														'beforePopState' in t
-															? t[o ? 'replace' : 'push'](r, n, { shallow: s, locale: i, scroll: e })
+															? t[o ? 'replace' : 'push'](r, n, { shallow: a, locale: i, scroll: e })
 															: t[o ? 'replace' : 'push'](n || r, { scroll: e });
 													})());
 											}
-										})(e, L, S, T, _, k, w, M, P)));
+										})(e, L, S, T, _, w, k, M, P)));
 						},
 						onMouseEnter(e) {
 							(E || 'function' != typeof C || C(e),
@@ -159,11 +159,11 @@
 								(0, h.getDomainLocale)(T, e, null == L ? void 0 : L.locales, null == L ? void 0 : L.domainLocales)) ||
 							(0, p.addBasePath)((0, c.addLocale)(T, e, null == L ? void 0 : L.defaultLocale));
 					}
-					return E ? s.default.cloneElement(n, B) : (0, o.jsx)('a', { ...R, ...B, children: r });
+					return E ? a.default.cloneElement(n, B) : (0, o.jsx)('a', { ...R, ...B, children: r });
 				}),
-				x = (0, s.createContext)({ pending: !1 }),
-				j = () => (0, s.useContext)(x),
-				_ = y;
+				y = (0, a.createContext)({ pending: !1 }),
+				j = () => (0, a.useContext)(y),
+				_ = x;
 			('function' == typeof t.default || ('object' == typeof t.default && null !== t.default)) &&
 				void 0 === t.default.__esModule &&
 				(Object.defineProperty(t.default, '__esModule', { value: !0 }),
@@ -172,11 +172,11 @@
 		},
 		2128: (e, t, r) => {
 			'use strict';
-			(r.r(t), r.d(t, { default: () => a }));
+			(r.r(t), r.d(t, { default: () => s }));
 			var n = r(5640),
 				o = r(7864),
-				s = r.n(o);
-			let a = () => {
+				a = r.n(o);
+			let s = () => {
 				let e = [
 					{
 						id: 'calculator',
@@ -261,7 +261,7 @@
 										(0, n.jsx)('h1', { className: 'font-black', children: 'Store' }),
 										(0, n.jsx)('div', {
 											className: 'flex items-center gap-x-2 md:gap-x-4',
-											children: (0, n.jsx)(s(), { href: '/', children: 'Mini Apps' }),
+											children: (0, n.jsx)(a(), { href: '/', children: 'Mini Apps' }),
 										}),
 									],
 								}),
@@ -279,13 +279,14 @@
 									(0, n.jsx)('div', {
 										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3',
 										children: e.map((e) => {
-											let { id: t = '', href: r = '', image: o = '', name: a = '', github: u = '' } = e;
+											let { id: t = '', href: r = '', image: o = '', name: s = '', github: u = '' } = e;
 											return (0, n.jsxs)(
 												'div',
 												{
-													className: 'overflow-hidden rounded-2xl border border-neutral-800',
+													className:
+														'overflow-hidden rounded-2xl border border-neutral-800 shadow-none shadow-neutral-100/10 transition-all hover:shadow-2xl',
 													children: [
-														(0, n.jsx)(s(), {
+														(0, n.jsx)(a(), {
 															href: r,
 															target: '_blank',
 															children: (0, n.jsx)('div', {
@@ -296,8 +297,8 @@
 														(0, n.jsxs)('div', {
 															className: 'flex items-center justify-between border-t border-neutral-800 p-4',
 															children: [
-																(0, n.jsx)('h4', { className: 'text-lg font-black md:text-xl', children: a }),
-																(0, n.jsx)(s(), {
+																(0, n.jsx)('h4', { className: 'text-lg font-black md:text-xl', children: s }),
+																(0, n.jsx)(a(), {
 																	href: u,
 																	className: 'text-sm underline underline-offset-4',
 																	target: '_blank',
@@ -368,12 +369,12 @@
 							e && ((r.current = null), e());
 							let t = o.current;
 							t && ((o.current = null), t());
-						} else (e && (r.current = s(e, n)), t && (o.current = s(t, n)));
+						} else (e && (r.current = a(e, n)), t && (o.current = a(t, n)));
 					},
 					[e, t],
 				);
 			}
-			function s(e, t) {
+			function a(e, t) {
 				if ('function' != typeof e)
 					return (
 						(e.current = t),
@@ -403,12 +404,12 @@
 				}));
 			let n = r(148),
 				o = r(9780),
-				s = 'function' == typeof IntersectionObserver,
-				a = new Map(),
+				a = 'function' == typeof IntersectionObserver,
+				s = new Map(),
 				u = [];
 			function i(e) {
 				let { rootRef: t, rootMargin: r, disabled: i } = e,
-					l = i || !s,
+					l = i || !a,
 					[c, d] = (0, n.useState)(!1),
 					f = (0, n.useRef)(null),
 					h = (0, n.useCallback)((e) => {
@@ -416,7 +417,7 @@
 					}, []);
 				return (
 					(0, n.useEffect)(() => {
-						if (s) {
+						if (a) {
 							if (l || c) return;
 							let e = f.current;
 							if (e && e.tagName)
@@ -424,12 +425,12 @@
 									let {
 										id: n,
 										observer: o,
-										elements: s,
+										elements: a,
 									} = (function (e) {
 										let t,
 											r = { root: e.root || null, margin: e.rootMargin || '' },
 											n = u.find((e) => e.root === r.root && e.margin === r.margin);
-										if (n && (t = a.get(n))) return t;
+										if (n && (t = s.get(n))) return t;
 										let o = new Map();
 										return (
 											(t = {
@@ -444,16 +445,16 @@
 												elements: o,
 											}),
 											u.push(r),
-											a.set(r, t),
+											s.set(r, t),
 											t
 										);
 									})(r);
 									return (
-										s.set(e, t),
+										a.set(e, t),
 										o.observe(e),
 										function () {
-											if ((s.delete(e), o.unobserve(e), 0 === s.size)) {
-												(o.disconnect(), a.delete(n));
+											if ((a.delete(e), o.unobserve(e), 0 === a.size)) {
+												(o.disconnect(), s.delete(n));
 												let e = u.findIndex((e) => e.root === n.root && e.margin === n.margin);
 												e > -1 && u.splice(e, 1);
 											}
