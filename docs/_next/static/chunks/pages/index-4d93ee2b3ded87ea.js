@@ -3,13 +3,13 @@
 	{
 		2128: (e, t, a) => {
 			'use strict';
-			(a.r(t), a.d(t, { default: () => o }));
+			(a.r(t), a.d(t, { default: () => n }));
 			var s = a(5640),
 				i = a(7864),
 				r = a.n(i),
-				n = a(148);
-			let o = () => {
-				let [{ query: e = '' }, t] = (0, n.useState)({ query: '' }),
+				o = a(148);
+			let n = () => {
+				let [{ query: e = '' }, t] = (0, o.useState)({ query: '' }),
 					a = [
 						{
 							id: 'calculator',
@@ -124,7 +124,7 @@
 								children: (0, s.jsxs)('div', {
 									className: 'flex items-center justify-between',
 									children: [
-										(0, s.jsxs)('h1', { className: 'font-black', children: ['Mini App Store (', a.length, ')'] }),
+										(0, s.jsxs)('h1', { className: 'font-black', children: ['Store (', a.length, ')'] }),
 										(0, s.jsx)('div', {
 											className: 'flex items-center gap-x-2 md:gap-x-4',
 											children: (0, s.jsx)(r(), { href: 'https://hieudoanm.github.io', children: 'Hieu Doan' }),
@@ -151,7 +151,7 @@
 									(0, s.jsx)('div', {
 										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4',
 										children: a.map((e) => {
-											let { id: t = '', href: a = '', image: i = '', name: n = '', github: o = '', tags: h = [] } = e;
+											let { id: t = '', href: a = '', image: i = '', name: o = '', github: n = '', tags: h = [] } = e;
 											return (0, s.jsxs)(
 												'div',
 												{
@@ -174,10 +174,10 @@
 																	children: [
 																		(0, s.jsx)('h5', {
 																			className: 'truncate text-base font-medium whitespace-nowrap md:text-lg',
-																			children: n,
+																			children: o,
 																		}),
 																		(0, s.jsx)(r(), {
-																			href: o,
+																			href: n,
 																			className: 'text-sm underline underline-offset-4',
 																			target: '_blank',
 																			children: (0, s.jsx)('p', { children: 'GitHub' }),
