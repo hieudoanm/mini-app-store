@@ -1,11 +1,17 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
+import { ChangeEvent, useState } from 'react';
 
-type Tag = 'cli' | 'extension' | 'web';
+type TagBrowser = 'extension' | 'web';
+type TagMobile = 'android' | 'ios';
+type TagNative = 'cli' | 'desktop';
+type Tag = TagBrowser | TagMobile | TagNative;
 
 type MiniApp = { id: string; href: string; github: string; image: string; name: string; tags: Tag[] };
 
 const HomePage: NextPage = () => {
+	const [{ query = '' }, setState] = useState<{ query: string }>({ query: '' });
+
 	const miniApps: MiniApp[] = [
 		{
 			id: 'calculator',
@@ -105,12 +111,19 @@ const HomePage: NextPage = () => {
 		},
 	];
 
+	const filteredMiniApps: MiniApp[] = miniApps.filter(({ name = '', tags = [] }) => {
+		return (
+			name.toLowerCase().includes(query.toLowerCase()) ||
+			tags.some((tag) => tag.toLowerCase().includes(query.toLowerCase()))
+		);
+	});
+
 	return (
-		<>
+		<div className="min-h-screen">
 			<nav className="border-b border-neutral-800">
 				<div className="container mx-auto px-4 py-2 md:px-8 md:py-4">
 					<div className="flex items-center justify-between">
-						<h1 className="font-black">Store</h1>
+						<h1 className="font-black">Mini App Store ({filteredMiniApps.length})</h1>
 						<div className="flex items-center gap-x-2 md:gap-x-4">
 							<Link href="https://hieudoanm.github.io">Hieu Doan</Link>
 						</div>
@@ -119,9 +132,18 @@ const HomePage: NextPage = () => {
 			</nav>
 			<div className="container mx-auto p-4 md:p-8">
 				<div className="flex flex-col gap-y-4 md:gap-y-8">
-					<h2 className="text-2xl font-extrabold md:text-3xl">Mini Apps ({miniApps.length})</h2>
+					<input
+						id="filter"
+						name="filter"
+						placeholder="Filter"
+						className="w-full rounded-full border border-neutral-800 px-4 py-2 focus:outline-none"
+						value={query}
+						onChange={(event: ChangeEvent<HTMLInputElement>) => {
+							setState((previous) => ({ ...previous, query: event.target.value }));
+						}}
+					/>
 					<div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4">
-						{miniApps.map(({ id = '', href = '', image = '', name = '', github = '', tags = [] }) => {
+						{filteredMiniApps.map(({ id = '', href = '', image = '', name = '', github = '', tags = [] }) => {
 							return (
 								<div
 									key={id}
@@ -157,7 +179,7 @@ const HomePage: NextPage = () => {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
