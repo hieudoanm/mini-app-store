@@ -18,7 +18,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
 	return (
 		<>
 			<Head>
-				<title>Mini App Store</title>
+				<title>Store</title>
 			</Head>
 			<div className={`${geistSans.className} ${geistMono.className}`}>
 				<div className="bg-neutral-900 text-neutral-100">

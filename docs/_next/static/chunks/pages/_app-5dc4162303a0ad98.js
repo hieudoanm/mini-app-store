@@ -14,13 +14,13 @@
 				n = s.n(t),
 				r = s(8580),
 				_ = s.n(r),
-				i = s(4626),
-				c = s.n(i);
+				c = s(4626),
+				i = s.n(c);
 			let o = (a) => {
 				let { Component: e, pageProps: s } = a;
 				return (0, l.jsxs)(l.Fragment, {
 					children: [
-						(0, l.jsx)(c(), { children: (0, l.jsx)('title', { children: 'Mini App Store' }) }),
+						(0, l.jsx)(i(), { children: (0, l.jsx)('title', { children: 'Store' }) }),
 						(0, l.jsx)('div', {
 							className: ''.concat(n().className, ' ').concat(_().className),
 							children: (0, l.jsx)('div', {
