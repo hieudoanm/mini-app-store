@@ -37,8 +37,12 @@
 		--color-neutral-800: oklch(26.9% 0 0);
 		--color-neutral-900: oklch(20.5% 0 0);
 		--spacing: 0.25rem;
+		--text-xs: 0.75rem;
+		--text-xs--line-height: calc(1 / 0.75);
 		--text-sm: 0.875rem;
 		--text-sm--line-height: calc(1.25 / 0.875);
+		--text-base: 1rem;
+		--text-base--line-height: calc(1.5 / 1);
 		--text-lg: 1.125rem;
 		--text-lg--line-height: calc(1.75 / 1.125);
 		--text-xl: 1.25rem;
@@ -53,6 +57,7 @@
 		--font-weight-bold: 700;
 		--font-weight-extrabold: 800;
 		--font-weight-black: 900;
+		--radius-sm: 0.25rem;
 		--radius-xl: 0.75rem;
 		--radius-2xl: 1rem;
 		--aspect-video: 16/9;
@@ -341,6 +346,9 @@
 	.mx-auto {
 		margin-inline: auto;
 	}
+	.block {
+		display: block;
+	}
 	.contents {
 		display: contents;
 	}
@@ -380,14 +388,25 @@
 	.gap-x-2 {
 		column-gap: calc(var(--spacing) * 2);
 	}
+	.gap-y-2 {
+		row-gap: calc(var(--spacing) * 2);
+	}
 	.gap-y-4 {
 		row-gap: calc(var(--spacing) * 4);
 	}
-	.overflow-hidden {
+	.truncate {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.overflow-hidden,
+	.truncate {
 		overflow: hidden;
 	}
 	.rounded-2xl {
 		border-radius: var(--radius-2xl);
+	}
+	.rounded-sm {
+		border-radius: var(--radius-sm);
 	}
 	.rounded-xl {
 		border-radius: var(--radius-xl);
@@ -425,17 +444,26 @@
 	.p-4 {
 		padding: calc(var(--spacing) * 4);
 	}
+	.px-1 {
+		padding-inline: calc(var(--spacing) * 1);
+	}
 	.px-4 {
 		padding-inline: calc(var(--spacing) * 4);
 	}
 	.px-6 {
 		padding-inline: calc(var(--spacing) * 6);
 	}
+	.py-0\.5 {
+		padding-block: calc(var(--spacing) * 0.5);
+	}
 	.py-2 {
 		padding-block: calc(var(--spacing) * 2);
 	}
 	.py-3 {
 		padding-block: calc(var(--spacing) * 3);
+	}
+	.py-4 {
+		padding-block: calc(var(--spacing) * 4);
 	}
 	.text-center {
 		text-align: center;
@@ -448,9 +476,9 @@
 		font-size: var(--text-6xl);
 		line-height: var(--tw-leading, var(--text-6xl--line-height));
 	}
-	.text-lg {
-		font-size: var(--text-lg);
-		line-height: var(--tw-leading, var(--text-lg--line-height));
+	.text-base {
+		font-size: var(--text-base);
+		line-height: var(--tw-leading, var(--text-base--line-height));
 	}
 	.text-sm {
 		font-size: var(--text-sm);
@@ -459,6 +487,10 @@
 	.text-xl {
 		font-size: var(--text-xl);
 		line-height: var(--tw-leading, var(--text-xl--line-height));
+	}
+	.text-xs {
+		font-size: var(--text-xs);
+		line-height: var(--tw-leading, var(--text-xs--line-height));
 	}
 	.font-black {
 		--tw-font-weight: var(--font-weight-black);
@@ -475,6 +507,9 @@
 	.font-medium {
 		--tw-font-weight: var(--font-weight-medium);
 		font-weight: var(--font-weight-medium);
+	}
+	.whitespace-nowrap {
+		white-space: nowrap;
 	}
 	.text-neutral-100 {
 		color: var(--color-neutral-100);
@@ -584,14 +619,19 @@
 			font-size: var(--text-3xl);
 			line-height: var(--tw-leading, var(--text-3xl--line-height));
 		}
-		.md\:text-xl {
-			font-size: var(--text-xl);
-			line-height: var(--tw-leading, var(--text-xl--line-height));
+		.md\:text-lg {
+			font-size: var(--text-lg);
+			line-height: var(--tw-leading, var(--text-lg--line-height));
 		}
 	}
 	@media (min-width: 64rem) {
 		.lg\:grid-cols-3 {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+	}
+	@media (min-width: 80rem) {
+		.xl\:grid-cols-4 {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
 		}
 	}
 }

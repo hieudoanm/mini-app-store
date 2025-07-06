@@ -14,35 +14,40 @@
 						href: 'https://hieudoanm.github.io/calculator',
 						github: 'https://github.com/hieudoanm/calculator',
 						image: 'https://raw.githubusercontent.com/hieudoanm/calculator/refs/heads/master/images/cover.png',
-						name: 'calculator',
+						name: 'Calculator',
+						tags: ['cli', 'web'],
 					},
 					{
 						id: 'chess',
 						href: 'https://hieudoanm.github.io/chess',
 						github: 'https://github.com/hieudoanm/chess',
 						image: 'https://raw.githubusercontent.com/hieudoanm/chess/refs/heads/master/images/cover.png',
-						name: 'chess',
+						name: 'Chess',
+						tags: ['cli', 'extension', 'web'],
 					},
 					{
 						id: 'clock',
 						href: 'https://hieudoanm.github.io/clock',
 						github: 'https://github.com/hieudoanm/clock',
 						image: 'https://raw.githubusercontent.com/hieudoanm/clock/refs/heads/master/images/cover.png',
-						name: 'clock',
+						name: 'Clock',
+						tags: ['cli', 'web'],
 					},
 					{
 						id: 'colors',
 						href: 'https://hieudoanm.github.io/colors',
 						github: 'https://github.com/hieudoanm/colors',
 						image: 'https://raw.githubusercontent.com/hieudoanm/colors/refs/heads/master/images/cover.png',
-						name: 'colors',
+						name: 'Colors',
+						tags: ['cli', 'web'],
 					},
 					{
 						id: 'converter',
 						href: 'https://hieudoanm.github.io/converter',
 						github: 'https://github.com/hieudoanm/converter',
 						image: 'https://raw.githubusercontent.com/hieudoanm/converter/refs/heads/master/images/cover.png',
-						name: 'converter',
+						name: 'Converter',
+						tags: ['web'],
 					},
 					{
 						id: 'gh',
@@ -50,20 +55,23 @@
 						github: 'https://github.com/hieudoanm/gh',
 						image: 'https://raw.githubusercontent.com/hieudoanm/gh/refs/heads/master/images/cover.png',
 						name: 'gh',
+						tags: ['cli', 'extension', 'web'],
 					},
 					{
 						id: 'images',
 						href: 'https://hieudoanm.github.io/images',
 						github: 'https://github.com/hieudoanm/images',
 						image: 'https://raw.githubusercontent.com/hieudoanm/images/refs/heads/master/images/cover.png',
-						name: 'images',
+						name: 'Images',
+						tags: ['cli', 'web'],
 					},
 					{
 						id: 'markup',
 						href: 'https://hieudoanm.github.io/markup',
 						github: 'https://github.com/hieudoanm/markup',
 						image: 'https://raw.githubusercontent.com/hieudoanm/markup/refs/heads/master/images/cover.png',
-						name: 'markup',
+						name: 'Markup',
+						tags: ['web'],
 					},
 					{
 						id: 'openapi-to-postmanv2',
@@ -72,27 +80,31 @@
 						image:
 							'https://raw.githubusercontent.com/hieudoanm/openapi-to-postmanv2/refs/heads/master/images/cover.png',
 						name: 'OpenAPI to PostmanV2',
+						tags: ['web'],
 					},
 					{
 						id: 're(d)act',
 						href: 'https://hieudoanm.github.io/redact',
 						github: 'https://github.com/hieudoanm/redact',
 						image: 'https://raw.githubusercontent.com/hieudoanm/redact/refs/heads/master/images/cover.png',
-						name: 're(d)act',
+						name: 'Re(d)act',
+						tags: ['web'],
 					},
 					{
 						id: 'status',
 						href: 'https://hieudoanm.github.io/status',
 						github: 'https://github.com/hieudoanm/status',
 						image: 'https://raw.githubusercontent.com/hieudoanm/status/refs/heads/master/images/cover.png',
-						name: 'status',
+						name: 'Status',
+						tags: ['cli', 'web'],
 					},
 					{
 						id: 'strings',
 						href: 'https://hieudoanm.github.io/strings',
 						github: 'https://github.com/hieudoanm/strings',
 						image: 'https://raw.githubusercontent.com/hieudoanm/strings/refs/heads/master/images/cover.png',
-						name: 'strings',
+						name: 'Strings',
+						tags: ['cli', 'web'],
 					},
 				];
 				return (0, a.jsxs)(a.Fragment, {
@@ -107,7 +119,7 @@
 										(0, a.jsx)('h1', { className: 'font-black', children: 'Store' }),
 										(0, a.jsx)('div', {
 											className: 'flex items-center gap-x-2 md:gap-x-4',
-											children: (0, a.jsx)(h(), { href: '/', children: 'Mini Apps' }),
+											children: (0, a.jsx)(h(), { href: 'https://hieudoanm.github.io', children: 'Hieu Doan' }),
 										}),
 									],
 								}),
@@ -123,9 +135,9 @@
 										children: ['Mini Apps (', e.length, ')'],
 									}),
 									(0, a.jsx)('div', {
-										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3',
+										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4',
 										children: e.map((e) => {
-											let { id: t = '', href: s = '', image: i = '', name: r = '', github: o = '' } = e;
+											let { id: t = '', href: s = '', image: i = '', name: r = '', github: n = '', tags: o = [] } = e;
 											return (0, a.jsxs)(
 												'div',
 												{
@@ -141,14 +153,36 @@
 															}),
 														}),
 														(0, a.jsxs)('div', {
-															className: 'flex items-center justify-between border-t border-neutral-800 p-4',
+															className: 'flex flex-col gap-y-2 border-t border-neutral-800 py-4',
 															children: [
-																(0, a.jsx)('h4', { className: 'text-lg font-black md:text-xl', children: r }),
-																(0, a.jsx)(h(), {
-																	href: o,
-																	className: 'text-sm underline underline-offset-4',
-																	target: '_blank',
-																	children: (0, a.jsx)('p', { children: 'GitHub' }),
+																(0, a.jsxs)('div', {
+																	className: 'flex items-center justify-between gap-x-2 px-4',
+																	children: [
+																		(0, a.jsx)('h5', {
+																			className: 'truncate text-base font-medium whitespace-nowrap md:text-lg',
+																			children: r,
+																		}),
+																		(0, a.jsx)(h(), {
+																			href: n,
+																			className: 'text-sm underline underline-offset-4',
+																			target: '_blank',
+																			children: (0, a.jsx)('p', { children: 'GitHub' }),
+																		}),
+																	],
+																}),
+																(0, a.jsx)('div', {
+																	className: 'flex items-center gap-x-2 px-4',
+																	children: o.map((e) =>
+																		(0, a.jsx)(
+																			'span',
+																			{
+																				className:
+																					'block rounded-sm bg-neutral-100 px-1 py-0.5 text-xs font-black text-neutral-900',
+																				children: e,
+																			},
+																			e,
+																		),
+																	),
 																}),
 															],
 														}),
