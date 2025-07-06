@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
 	/* config options here */
 	trailingSlash: true,
 	reactStrictMode: true,
-	basePath: NODE_ENV === 'development' ? '' : '/mini-app-store',
+	basePath: NODE_ENV === 'development' ? '' : '/store',
 	output: NODE_ENV === 'development' ? 'standalone' : 'export',
 	distDir: NODE_ENV === 'development' ? '.next' : 'docs',
 };

@@ -1,3 +1,4 @@
+import { Navbar } from '@store/components/Navbar';
 import { NextPage } from 'next';
 import Link from 'next/link';
 import { ChangeEvent, useState } from 'react';
@@ -120,16 +121,7 @@ const HomePage: NextPage = () => {
 
 	return (
 		<div className="min-h-screen">
-			<nav className="border-b border-neutral-800">
-				<div className="container mx-auto px-4 py-2 md:px-8 md:py-4">
-					<div className="flex items-center justify-between">
-						<h1 className="font-black">Store ({filteredMiniApps.length})</h1>
-						<div className="flex items-center gap-x-2 md:gap-x-4">
-							<Link href="https://hieudoanm.github.io">Hieu Doan</Link>
-						</div>
-					</div>
-				</div>
-			</nav>
+			<Navbar />
 			<div className="container mx-auto p-4 md:p-8">
 				<div className="flex flex-col gap-y-4 md:gap-y-8">
 					<input

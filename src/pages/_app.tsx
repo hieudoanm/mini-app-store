@@ -1,4 +1,4 @@
-import '@mini-app-store/styles/globals.css';
+import '@store/styles/globals.css';
 import type { AppProps } from 'next/app';
 import { Geist, Geist_Mono } from 'next/font/google';
 import Head from 'next/head';

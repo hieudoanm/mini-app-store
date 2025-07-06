@@ -6,11 +6,11 @@
 		var n = r[o];
 		if (void 0 !== n) return n.exports;
 		var i = (r[o] = { exports: {} }),
-			a = !0;
+			l = !0;
 		try {
-			(e[o](i, i.exports, t), (a = !1));
+			(e[o](i, i.exports, t), (l = !1));
 		} finally {
-			a && delete r[o];
+			l && delete r[o];
 		}
 		return i.exports;
 	}
@@ -20,19 +20,19 @@
 			t.O = (r, o, n, i) => {
 				if (o) {
 					i = i || 0;
-					for (var a = e.length; a > 0 && e[a - 1][2] > i; a--) e[a] = e[a - 1];
-					e[a] = [o, n, i];
+					for (var l = e.length; l > 0 && e[l - 1][2] > i; l--) e[l] = e[l - 1];
+					e[l] = [o, n, i];
 					return;
 				}
-				for (var l = 1 / 0, a = 0; a < e.length; a++) {
-					for (var [o, n, i] = e[a], u = !0, f = 0; f < o.length; f++)
-						(!1 & i || l >= i) && Object.keys(t.O).every((e) => t.O[e](o[f]))
+				for (var a = 1 / 0, l = 0; l < e.length; l++) {
+					for (var [o, n, i] = e[l], u = !0, f = 0; f < o.length; f++)
+						(!1 & i || a >= i) && Object.keys(t.O).every((e) => t.O[e](o[f]))
 							? o.splice(f--, 1)
-							: ((u = !1), i < l && (l = i));
+							: ((u = !1), i < a && (a = i));
 					if (u) {
-						e.splice(a--, 1);
-						var p = n();
-						void 0 !== p && (r = p);
+						e.splice(l--, 1);
+						var s = n();
+						void 0 !== s && (r = s);
 					}
 				}
 				return r;
@@ -60,21 +60,21 @@
 				Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
 				Object.defineProperty(e, '__esModule', { value: !0 }));
 		}),
-		(t.p = '/mini-app-store/_next/'),
+		(t.p = '/store/_next/'),
 		(() => {
 			var e = { 68: 0 };
 			t.O.j = (r) => 0 === e[r];
 			var r = (r, o) => {
 					var n,
 						i,
-						[a, l, u] = o,
+						[l, a, u] = o,
 						f = 0;
-					if (a.some((r) => 0 !== e[r])) {
-						for (n in l) t.o(l, n) && (t.m[n] = l[n]);
-						if (u) var p = u(t);
+					if (l.some((r) => 0 !== e[r])) {
+						for (n in a) t.o(a, n) && (t.m[n] = a[n]);
+						if (u) var s = u(t);
 					}
-					for (r && r(o); f < a.length; f++) ((i = a[f]), t.o(e, i) && e[i] && e[i][0](), (e[i] = 0));
-					return t.O(p);
+					for (r && r(o); f < l.length; f++) ((i = l[f]), t.o(e, i) && e[i] && e[i][0](), (e[i] = 0));
+					return t.O(s);
 				},
 				o = (self.webpackChunk_N_E = self.webpackChunk_N_E || []);
 			(o.forEach(r.bind(null, 0)), (o.push = r.bind(null, o.push.bind(o))));

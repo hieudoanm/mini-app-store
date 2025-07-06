@@ -1,15 +1,32 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
 	[332],
 	{
-		2128: (e, t, a) => {
+		2571: (e, t, a) => {
 			'use strict';
-			(a.r(t), a.d(t, { default: () => n }));
+			(a.r(t), a.d(t, { default: () => h }));
 			var s = a(5640),
 				i = a(7864),
-				r = a.n(i),
-				o = a(148);
-			let n = () => {
-				let [{ query: e = '' }, t] = (0, o.useState)({ query: '' }),
+				r = a.n(i);
+			let o = () =>
+				(0, s.jsx)('nav', {
+					className: 'border-b border-neutral-800',
+					children: (0, s.jsx)('div', {
+						className: 'container mx-auto px-4 py-2 md:px-8 md:py-4',
+						children: (0, s.jsxs)('div', {
+							className: 'flex items-center justify-between',
+							children: [
+								(0, s.jsx)('h1', { className: 'font-black', children: 'Store' }),
+								(0, s.jsx)('div', {
+									className: 'flex items-center gap-x-2 md:gap-x-4',
+									children: (0, s.jsx)(r(), { href: 'https://hieudoanm.github.io', children: 'Hieu Doan' }),
+								}),
+							],
+						}),
+					}),
+				});
+			var n = a(148);
+			let h = () => {
+				let [{ query: e = '' }, t] = (0, n.useState)({ query: '' }),
 					a = [
 						{
 							id: 'calculator',
@@ -117,22 +134,7 @@
 				return (0, s.jsxs)('div', {
 					className: 'min-h-screen',
 					children: [
-						(0, s.jsx)('nav', {
-							className: 'border-b border-neutral-800',
-							children: (0, s.jsx)('div', {
-								className: 'container mx-auto px-4 py-2 md:px-8 md:py-4',
-								children: (0, s.jsxs)('div', {
-									className: 'flex items-center justify-between',
-									children: [
-										(0, s.jsxs)('h1', { className: 'font-black', children: ['Store (', a.length, ')'] }),
-										(0, s.jsx)('div', {
-											className: 'flex items-center gap-x-2 md:gap-x-4',
-											children: (0, s.jsx)(r(), { href: 'https://hieudoanm.github.io', children: 'Hieu Doan' }),
-										}),
-									],
-								}),
-							}),
-						}),
+						(0, s.jsx)(o, {}),
 						(0, s.jsx)('div', {
 							className: 'container mx-auto p-4 md:p-8',
 							children: (0, s.jsxs)('div', {
@@ -217,7 +219,7 @@
 			(window.__NEXT_P = window.__NEXT_P || []).push([
 				'/',
 				function () {
-					return a(2128);
+					return a(2571);
 				},
 			]);
 		},

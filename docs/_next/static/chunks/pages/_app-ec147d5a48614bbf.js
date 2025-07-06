@@ -12,17 +12,17 @@
 			s(2147);
 			var t = s(7332),
 				n = s.n(t),
-				c = s(8580),
-				r = s.n(c),
-				_ = s(4626),
-				i = s.n(_);
+				r = s(8580),
+				_ = s.n(r),
+				i = s(4626),
+				c = s.n(i);
 			let o = (a) => {
 				let { Component: e, pageProps: s } = a;
 				return (0, l.jsxs)(l.Fragment, {
 					children: [
-						(0, l.jsx)(i(), { children: (0, l.jsx)('title', { children: 'Mini App Store' }) }),
+						(0, l.jsx)(c(), { children: (0, l.jsx)('title', { children: 'Mini App Store' }) }),
 						(0, l.jsx)('div', {
-							className: ''.concat(n().className, ' ').concat(r().className),
+							className: ''.concat(n().className, ' ').concat(_().className),
 							children: (0, l.jsx)('div', {
 								className: 'bg-neutral-900 text-neutral-100',
 								children: (0, l.jsx)(e, { ...s }),
@@ -35,8 +35,8 @@
 		7332: (a) => {
 			a.exports = {
 				style: { fontFamily: "'Geist', 'Geist Fallback'", fontStyle: 'normal' },
-				className: '__className_942572',
-				variable: '__variable_942572',
+				className: '__className_75602d',
+				variable: '__variable_75602d',
 			};
 		},
 		8462: (a, e, s) => {
@@ -50,8 +50,8 @@
 		8580: (a) => {
 			a.exports = {
 				style: { fontFamily: "'Geist Mono', 'Geist Mono Fallback'", fontStyle: 'normal' },
-				className: '__className_75c5c2',
-				variable: '__variable_75c5c2',
+				className: '__className_27b809',
+				variable: '__variable_27b809',
 			};
 		},
 	},
