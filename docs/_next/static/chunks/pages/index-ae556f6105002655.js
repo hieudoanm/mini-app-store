@@ -90,7 +90,7 @@
 							github: 'https://github.com/hieudoanm/markup',
 							image: 'https://raw.githubusercontent.com/hieudoanm/markup/refs/heads/master/images/cover.png',
 							name: 'Markup',
-							tags: ['desktop', 'web'],
+							tags: ['macos', 'web'],
 						},
 						{
 							id: 'openapi-to-postmanv2',
@@ -107,7 +107,7 @@
 							github: 'https://github.com/hieudoanm/redact',
 							image: 'https://raw.githubusercontent.com/hieudoanm/redact/refs/heads/master/images/cover.png',
 							name: 'Re(d)act',
-							tags: ['web'],
+							tags: ['macos', 'web'],
 						},
 						{
 							id: 'status',
