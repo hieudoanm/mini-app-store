@@ -76,7 +76,7 @@ const HomePage: NextPage = () => {
 			github: 'https://github.com/hieudoanm/markup',
 			image: 'https://raw.githubusercontent.com/hieudoanm/markup/refs/heads/master/images/cover.png',
 			name: 'Markup',
-			tags: ['web'],
+			tags: ['desktop', 'web'],
 		},
 		{
 			id: 'openapi-to-postmanv2',
