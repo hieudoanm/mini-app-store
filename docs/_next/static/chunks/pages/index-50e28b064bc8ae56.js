@@ -135,7 +135,7 @@
 										},
 									}),
 									(0, a.jsx)('div', {
-										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4',
+										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-5',
 										children: s.map((e) => {
 											let { id: t = '', href: s = '', image: i = '', name: n = '', github: o = '', tags: h = [] } = e;
 											return (0, a.jsxs)(

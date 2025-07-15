@@ -118,7 +118,7 @@ const HomePage: NextPage = () => {
 							setState((previous) => ({ ...previous, query: event.target.value }));
 						}}
 					/>
-					<div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4">
+					<div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-5">
 						{filteredMiniApps.map(({ id = '', href = '', image = '', name = '', github = '', tags = [] }) => {
 							return (
 								<div
