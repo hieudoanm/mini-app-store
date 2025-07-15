@@ -3,11 +3,11 @@
 	{
 		2571: (e, t, a) => {
 			'use strict';
-			(a.r(t), a.d(t, { default: () => h }));
+			(a.r(t), a.d(t, { default: () => o }));
 			var s = a(5640),
 				i = a(7864),
 				r = a.n(i);
-			let o = () =>
+			let n = () =>
 				(0, s.jsx)('nav', {
 					className: 'border-b border-neutral-800',
 					children: (0, s.jsx)('div', {
@@ -24,9 +24,9 @@
 						}),
 					}),
 				});
-			var n = a(148);
-			let h = () => {
-				let [{ query: e = '' }, t] = (0, n.useState)({ query: '' }),
+			var h = a(148);
+			let o = () => {
+				let [{ query: e = '' }, t] = (0, h.useState)({ query: '' }),
 					a = [
 						{
 							id: 'calculator',
@@ -53,20 +53,12 @@
 							tags: ['cli', 'web'],
 						},
 						{
-							id: 'colors',
-							href: 'https://hieudoanm.github.io/colors',
-							github: 'https://github.com/hieudoanm/colors',
-							image: 'https://raw.githubusercontent.com/hieudoanm/colors/refs/heads/master/images/cover.png',
-							name: 'Colors',
-							tags: ['cli', 'web'],
-						},
-						{
 							id: 'converter',
 							href: 'https://hieudoanm.github.io/converter',
 							github: 'https://github.com/hieudoanm/converter',
 							image: 'https://raw.githubusercontent.com/hieudoanm/converter/refs/heads/master/images/cover.png',
 							name: 'Converter',
-							tags: ['web'],
+							tags: ['cli', 'web'],
 						},
 						{
 							id: 'gh',
@@ -134,7 +126,7 @@
 				return (0, s.jsxs)('div', {
 					className: 'min-h-screen',
 					children: [
-						(0, s.jsx)(o, {}),
+						(0, s.jsx)(n, {}),
 						(0, s.jsx)('div', {
 							className: 'container mx-auto p-4 md:p-8',
 							children: (0, s.jsxs)('div', {
@@ -153,7 +145,7 @@
 									(0, s.jsx)('div', {
 										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4',
 										children: a.map((e) => {
-											let { id: t = '', href: a = '', image: i = '', name: o = '', github: n = '', tags: h = [] } = e;
+											let { id: t = '', href: a = '', image: i = '', name: n = '', github: h = '', tags: o = [] } = e;
 											return (0, s.jsxs)(
 												'div',
 												{
@@ -176,10 +168,10 @@
 																	children: [
 																		(0, s.jsx)('h5', {
 																			className: 'truncate text-base font-medium whitespace-nowrap md:text-lg',
-																			children: o,
+																			children: n,
 																		}),
 																		(0, s.jsx)(r(), {
-																			href: n,
+																			href: h,
 																			className: 'text-sm underline underline-offset-4',
 																			target: '_blank',
 																			children: (0, s.jsx)('p', { children: 'GitHub' }),
@@ -188,7 +180,7 @@
 																}),
 																(0, s.jsx)('div', {
 																	className: 'flex items-center gap-x-2 px-4',
-																	children: h.map((e) =>
+																	children: o.map((e) =>
 																		(0, s.jsx)(
 																			'span',
 																			{

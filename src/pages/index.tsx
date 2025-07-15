@@ -39,20 +39,12 @@ const HomePage: NextPage = () => {
 			tags: ['cli', 'web'],
 		},
 		{
-			id: 'colors',
-			href: 'https://hieudoanm.github.io/colors',
-			github: 'https://github.com/hieudoanm/colors',
-			image: 'https://raw.githubusercontent.com/hieudoanm/colors/refs/heads/master/images/cover.png',
-			name: 'Colors',
-			tags: ['cli', 'web'],
-		},
-		{
 			id: 'converter',
 			href: 'https://hieudoanm.github.io/converter',
 			github: 'https://github.com/hieudoanm/converter',
 			image: 'https://raw.githubusercontent.com/hieudoanm/converter/refs/heads/master/images/cover.png',
 			name: 'Converter',
-			tags: ['web'],
+			tags: ['cli', 'web'],
 		},
 		{
 			id: 'gh',
