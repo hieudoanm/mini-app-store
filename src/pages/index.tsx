@@ -87,6 +87,14 @@ const HomePage: NextPage = () => {
 			tags: ['macos', 'web'],
 		},
 		{
+			id: 'reverse-proxy',
+			href: 'https://hieudoanm-reverse-proxy.vercel.app/',
+			github: 'https://github.com/hieudoanm/reverse-proxy',
+			image: 'https://raw.githubusercontent.com/hieudoanm/reverse-proxy/refs/heads/master/images/cover.png',
+			name: 'Reverse Proxy',
+			tags: ['web'],
+		},
+		{
 			id: 'status',
 			href: 'https://hieudoanm.github.io/status',
 			github: 'https://github.com/hieudoanm/status',

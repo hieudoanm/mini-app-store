@@ -1,13 +1,13 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
 	[332],
 	{
-		2571: (e, t, a) => {
+		80: (e, t, a) => {
 			'use strict';
 			(a.r(t), a.d(t, { default: () => h }));
 			var s = a(5640),
-				i = a(7864),
+				i = a(2843),
 				r = a.n(i);
-			let n = () =>
+			let o = () =>
 				(0, s.jsx)('nav', {
 					className: 'border-b border-neutral-800',
 					children: (0, s.jsx)('div', {
@@ -24,9 +24,9 @@
 						}),
 					}),
 				});
-			var o = a(148);
+			var n = a(148);
 			let h = () => {
-				let [{ query: e = '' }, t] = (0, o.useState)({ query: '' }),
+				let [{ query: e = '' }, t] = (0, n.useState)({ query: '' }),
 					a = [
 						{
 							id: 'calculator',
@@ -102,6 +102,14 @@
 							tags: ['macos', 'web'],
 						},
 						{
+							id: 'reverse-proxy',
+							href: 'https://hieudoanm-reverse-proxy.vercel.app/',
+							github: 'https://github.com/hieudoanm/reverse-proxy',
+							image: 'https://raw.githubusercontent.com/hieudoanm/reverse-proxy/refs/heads/master/images/cover.png',
+							name: 'Reverse Proxy',
+							tags: ['web'],
+						},
+						{
 							id: 'status',
 							href: 'https://hieudoanm.github.io/status',
 							github: 'https://github.com/hieudoanm/status',
@@ -118,7 +126,7 @@
 				return (0, s.jsxs)('div', {
 					className: 'min-h-screen',
 					children: [
-						(0, s.jsx)(n, {}),
+						(0, s.jsx)(o, {}),
 						(0, s.jsx)('div', {
 							className: 'container mx-auto p-4 md:p-8',
 							children: (0, s.jsxs)('div', {
@@ -137,7 +145,7 @@
 									(0, s.jsx)('div', {
 										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4',
 										children: a.map((e) => {
-											let { id: t = '', href: a = '', image: i = '', name: n = '', github: o = '', tags: h = [] } = e;
+											let { id: t = '', href: a = '', image: i = '', name: o = '', github: n = '', tags: h = [] } = e;
 											return (0, s.jsxs)(
 												'div',
 												{
@@ -160,10 +168,10 @@
 																	children: [
 																		(0, s.jsx)('h5', {
 																			className: 'truncate text-base font-medium whitespace-nowrap md:text-lg',
-																			children: n,
+																			children: o,
 																		}),
 																		(0, s.jsx)(r(), {
-																			href: o,
+																			href: n,
 																			className: 'text-sm underline underline-offset-4',
 																			target: '_blank',
 																			children: (0, s.jsx)('p', { children: 'GitHub' }),
@@ -199,17 +207,16 @@
 				});
 			};
 		},
-		8898: (e, t, a) => {
+		3351: (e, t, a) => {
 			(window.__NEXT_P = window.__NEXT_P || []).push([
 				'/',
 				function () {
-					return a(2571);
+					return a(80);
 				},
 			]);
 		},
 	},
 	(e) => {
-		var t = (t) => e((e.s = t));
-		(e.O(0, [864, 636, 593, 792], () => t(8898)), (_N_E = e.O()));
+		(e.O(0, [843, 636, 593, 792], () => e((e.s = 3351))), (_N_E = e.O()));
 	},
 ]);
