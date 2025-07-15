@@ -15,14 +15,6 @@ const HomePage: NextPage = () => {
 
 	const miniApps: MiniApp[] = [
 		{
-			id: 'calculator',
-			href: 'https://hieudoanm.github.io/calculator',
-			github: 'https://github.com/hieudoanm/calculator',
-			image: 'https://raw.githubusercontent.com/hieudoanm/calculator/refs/heads/master/images/cover.png',
-			name: 'Calculator',
-			tags: ['cli', 'web'],
-		},
-		{
 			id: 'chess',
 			href: 'https://hieudoanm.github.io/chess',
 			github: 'https://github.com/hieudoanm/chess',

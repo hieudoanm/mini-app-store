@@ -1,41 +1,33 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
 	[332],
 	{
-		80: (e, t, a) => {
+		80: (e, t, s) => {
 			'use strict';
-			(a.r(t), a.d(t, { default: () => h }));
-			var s = a(5640),
-				i = a(2843),
-				r = a.n(i);
-			let o = () =>
-				(0, s.jsx)('nav', {
+			(s.r(t), s.d(t, { default: () => h }));
+			var a = s(5640),
+				i = s(2843),
+				r = s.n(i);
+			let n = () =>
+				(0, a.jsx)('nav', {
 					className: 'border-b border-neutral-800',
-					children: (0, s.jsx)('div', {
+					children: (0, a.jsx)('div', {
 						className: 'container mx-auto px-4 py-2 md:px-8 md:py-4',
-						children: (0, s.jsxs)('div', {
+						children: (0, a.jsxs)('div', {
 							className: 'flex items-center justify-between',
 							children: [
-								(0, s.jsx)('h1', { className: 'font-black', children: 'Store' }),
-								(0, s.jsx)('div', {
+								(0, a.jsx)('h1', { className: 'font-black', children: 'Store' }),
+								(0, a.jsx)('div', {
 									className: 'flex items-center gap-x-2 md:gap-x-4',
-									children: (0, s.jsx)(r(), { href: 'https://hieudoanm.github.io', children: 'Hieu Doan' }),
+									children: (0, a.jsx)(r(), { href: 'https://hieudoanm.github.io', children: 'Hieu Doan' }),
 								}),
 							],
 						}),
 					}),
 				});
-			var n = a(148);
+			var o = s(148);
 			let h = () => {
-				let [{ query: e = '' }, t] = (0, n.useState)({ query: '' }),
-					a = [
-						{
-							id: 'calculator',
-							href: 'https://hieudoanm.github.io/calculator',
-							github: 'https://github.com/hieudoanm/calculator',
-							image: 'https://raw.githubusercontent.com/hieudoanm/calculator/refs/heads/master/images/cover.png',
-							name: 'Calculator',
-							tags: ['cli', 'web'],
-						},
+				let [{ query: e = '' }, t] = (0, o.useState)({ query: '' }),
+					s = [
 						{
 							id: 'chess',
 							href: 'https://hieudoanm.github.io/chess',
@@ -118,21 +110,21 @@
 							tags: ['cli', 'web'],
 						},
 					].filter((t) => {
-						let { name: a = '', tags: s = [] } = t;
+						let { name: s = '', tags: a = [] } = t;
 						return (
-							a.toLowerCase().includes(e.toLowerCase()) || s.some((t) => t.toLowerCase().includes(e.toLowerCase()))
+							s.toLowerCase().includes(e.toLowerCase()) || a.some((t) => t.toLowerCase().includes(e.toLowerCase()))
 						);
 					});
-				return (0, s.jsxs)('div', {
+				return (0, a.jsxs)('div', {
 					className: 'min-h-screen',
 					children: [
-						(0, s.jsx)(o, {}),
-						(0, s.jsx)('div', {
+						(0, a.jsx)(n, {}),
+						(0, a.jsx)('div', {
 							className: 'container mx-auto p-4 md:p-8',
-							children: (0, s.jsxs)('div', {
+							children: (0, a.jsxs)('div', {
 								className: 'flex flex-col gap-y-4 md:gap-y-8',
 								children: [
-									(0, s.jsx)('input', {
+									(0, a.jsx)('input', {
 										id: 'filter',
 										name: 'filter',
 										placeholder: 'Filter',
@@ -142,46 +134,46 @@
 											t((t) => ({ ...t, query: e.target.value }));
 										},
 									}),
-									(0, s.jsx)('div', {
+									(0, a.jsx)('div', {
 										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4',
-										children: a.map((e) => {
-											let { id: t = '', href: a = '', image: i = '', name: o = '', github: n = '', tags: h = [] } = e;
-											return (0, s.jsxs)(
+										children: s.map((e) => {
+											let { id: t = '', href: s = '', image: i = '', name: n = '', github: o = '', tags: h = [] } = e;
+											return (0, a.jsxs)(
 												'div',
 												{
 													className:
 														'overflow-hidden rounded-2xl border border-neutral-800 shadow-none shadow-neutral-100/10 transition-all hover:shadow-2xl',
 													children: [
-														(0, s.jsx)(r(), {
-															href: a,
+														(0, a.jsx)(r(), {
+															href: s,
 															target: '_blank',
-															children: (0, s.jsx)('div', {
+															children: (0, a.jsx)('div', {
 																className: 'aspect-video bg-contain bg-center bg-no-repeat',
 																style: { backgroundImage: 'url('.concat(i, ')') },
 															}),
 														}),
-														(0, s.jsxs)('div', {
+														(0, a.jsxs)('div', {
 															className: 'flex flex-col gap-y-2 border-t border-neutral-800 py-4',
 															children: [
-																(0, s.jsxs)('div', {
+																(0, a.jsxs)('div', {
 																	className: 'flex items-center justify-between gap-x-2 px-4',
 																	children: [
-																		(0, s.jsx)('h5', {
+																		(0, a.jsx)('h5', {
 																			className: 'truncate text-base font-medium whitespace-nowrap md:text-lg',
-																			children: o,
+																			children: n,
 																		}),
-																		(0, s.jsx)(r(), {
-																			href: n,
+																		(0, a.jsx)(r(), {
+																			href: o,
 																			className: 'text-sm underline underline-offset-4',
 																			target: '_blank',
-																			children: (0, s.jsx)('p', { children: 'GitHub' }),
+																			children: (0, a.jsx)('p', { children: 'GitHub' }),
 																		}),
 																	],
 																}),
-																(0, s.jsx)('div', {
+																(0, a.jsx)('div', {
 																	className: 'flex items-center gap-x-2 px-4',
 																	children: h.map((e) =>
-																		(0, s.jsx)(
+																		(0, a.jsx)(
 																			'span',
 																			{
 																				className:
@@ -207,11 +199,11 @@
 				});
 			};
 		},
-		3351: (e, t, a) => {
+		3351: (e, t, s) => {
 			(window.__NEXT_P = window.__NEXT_P || []).push([
 				'/',
 				function () {
-					return a(80);
+					return s(80);
 				},
 			]);
 		},

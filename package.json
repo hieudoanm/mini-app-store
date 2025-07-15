@@ -1,5 +1,5 @@
 {
-	"name": "mini-app-store",
+	"name": "store",
 	"version": "0.0.1",
 	"private": true,
 	"description": "Mini App Store",
@@ -8,13 +8,13 @@
 		"app",
 		"store"
 	],
-	"homepage": "https://github.com/hieudoanm/mini-app-store#readme",
+	"homepage": "https://github.com/hieudoanm/store#readme",
 	"bugs": {
-		"url": "https://github.com/hieudoanm/mini-app-store/issues"
+		"url": "https://github.com/hieudoanm/store/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/hieudoanm/mini-app-store.git"
+		"url": "git+ssh://git@github.com/hieudoanm/store.git"
 	},
 	"license": "GPL-3.0",
 	"author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io/)",
