@@ -3,7 +3,7 @@
 	{
 		2571: (e, t, a) => {
 			'use strict';
-			(a.r(t), a.d(t, { default: () => o }));
+			(a.r(t), a.d(t, { default: () => h }));
 			var s = a(5640),
 				i = a(7864),
 				r = a.n(i);
@@ -24,9 +24,9 @@
 						}),
 					}),
 				});
-			var h = a(148);
-			let o = () => {
-				let [{ query: e = '' }, t] = (0, h.useState)({ query: '' }),
+			var o = a(148);
+			let h = () => {
+				let [{ query: e = '' }, t] = (0, o.useState)({ query: '' }),
 					a = [
 						{
 							id: 'calculator',
@@ -109,14 +109,6 @@
 							name: 'Status',
 							tags: ['cli', 'web'],
 						},
-						{
-							id: 'strings',
-							href: 'https://hieudoanm.github.io/strings',
-							github: 'https://github.com/hieudoanm/strings',
-							image: 'https://raw.githubusercontent.com/hieudoanm/strings/refs/heads/master/images/cover.png',
-							name: 'Strings',
-							tags: ['cli', 'web'],
-						},
 					].filter((t) => {
 						let { name: a = '', tags: s = [] } = t;
 						return (
@@ -145,7 +137,7 @@
 									(0, s.jsx)('div', {
 										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4',
 										children: a.map((e) => {
-											let { id: t = '', href: a = '', image: i = '', name: n = '', github: h = '', tags: o = [] } = e;
+											let { id: t = '', href: a = '', image: i = '', name: n = '', github: o = '', tags: h = [] } = e;
 											return (0, s.jsxs)(
 												'div',
 												{
@@ -171,7 +163,7 @@
 																			children: n,
 																		}),
 																		(0, s.jsx)(r(), {
-																			href: h,
+																			href: o,
 																			className: 'text-sm underline underline-offset-4',
 																			target: '_blank',
 																			children: (0, s.jsx)('p', { children: 'GitHub' }),
@@ -180,7 +172,7 @@
 																}),
 																(0, s.jsx)('div', {
 																	className: 'flex items-center gap-x-2 px-4',
-																	children: o.map((e) =>
+																	children: h.map((e) =>
 																		(0, s.jsx)(
 																			'span',
 																			{

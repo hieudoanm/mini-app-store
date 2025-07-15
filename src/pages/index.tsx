@@ -94,14 +94,6 @@ const HomePage: NextPage = () => {
 			name: 'Status',
 			tags: ['cli', 'web'],
 		},
-		{
-			id: 'strings',
-			href: 'https://hieudoanm.github.io/strings',
-			github: 'https://github.com/hieudoanm/strings',
-			image: 'https://raw.githubusercontent.com/hieudoanm/strings/refs/heads/master/images/cover.png',
-			name: 'Strings',
-			tags: ['cli', 'web'],
-		},
 	];
 
 	const filteredMiniApps: MiniApp[] = miniApps.filter(({ name = '', tags = [] }) => {
