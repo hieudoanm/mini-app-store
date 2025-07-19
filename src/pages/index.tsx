@@ -55,14 +55,6 @@ const HomePage: NextPage = () => {
 			tags: ['web'],
 		},
 		{
-			id: 're(d)act',
-			href: 'https://hieudoanm.github.io/redact',
-			github: 'https://github.com/hieudoanm/redact',
-			image: 'https://raw.githubusercontent.com/hieudoanm/redact/refs/heads/master/images/cover.png',
-			name: 'Re(d)act',
-			tags: ['macos', 'web'],
-		},
-		{
 			id: 'reverse-proxy',
 			href: 'https://hieudoanm-reverse-proxy.vercel.app/',
 			github: 'https://github.com/hieudoanm/reverse-proxy',
@@ -94,7 +86,7 @@ const HomePage: NextPage = () => {
 							setState((previous) => ({ ...previous, query: event.target.value }));
 						}}
 					/>
-					<div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
+					<div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
 						{filteredMiniApps.map(({ id = '', href = '', image = '', name = '', github = '', tags = [] }) => {
 							return (
 								<div

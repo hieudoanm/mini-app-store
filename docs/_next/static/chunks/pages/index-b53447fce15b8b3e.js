@@ -1,12 +1,12 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
 	[332],
 	{
-		80: (e, t, s) => {
+		80: (e, s, t) => {
 			'use strict';
-			(s.r(t), s.d(t, { default: () => h }));
-			var a = s(5640),
-				r = s(2843),
-				i = s.n(r);
+			(t.r(s), t.d(s, { default: () => h }));
+			var a = t(5640),
+				r = t(2843),
+				i = t.n(r);
 			let n = () =>
 				(0, a.jsx)('nav', {
 					className: 'border-b border-neutral-800',
@@ -24,10 +24,10 @@
 						}),
 					}),
 				});
-			var o = s(148);
+			var o = t(148);
 			let h = () => {
-				let [{ query: e = '' }, t] = (0, o.useState)({ query: '' }),
-					s = [
+				let [{ query: e = '' }, s] = (0, o.useState)({ query: '' }),
+					t = [
 						{
 							id: 'chess',
 							href: 'https://hieudoanm.github.io/chess',
@@ -70,14 +70,6 @@
 							tags: ['web'],
 						},
 						{
-							id: 're(d)act',
-							href: 'https://hieudoanm.github.io/redact',
-							github: 'https://github.com/hieudoanm/redact',
-							image: 'https://raw.githubusercontent.com/hieudoanm/redact/refs/heads/master/images/cover.png',
-							name: 'Re(d)act',
-							tags: ['macos', 'web'],
-						},
-						{
 							id: 'reverse-proxy',
 							href: 'https://hieudoanm-reverse-proxy.vercel.app/',
 							github: 'https://github.com/hieudoanm/reverse-proxy',
@@ -85,10 +77,10 @@
 							name: 'Reverse Proxy',
 							tags: ['web'],
 						},
-					].filter((t) => {
-						let { name: s = '', tags: a = [] } = t;
+					].filter((s) => {
+						let { name: t = '', tags: a = [] } = s;
 						return (
-							s.toLowerCase().includes(e.toLowerCase()) || a.some((t) => t.toLowerCase().includes(e.toLowerCase()))
+							t.toLowerCase().includes(e.toLowerCase()) || a.some((s) => s.toLowerCase().includes(e.toLowerCase()))
 						);
 					});
 				return (0, a.jsxs)('div', {
@@ -107,13 +99,13 @@
 										className: 'w-full rounded-full border border-neutral-800 px-4 py-2 focus:outline-none',
 										value: e,
 										onChange: (e) => {
-											t((t) => ({ ...t, query: e.target.value }));
+											s((s) => ({ ...s, query: e.target.value }));
 										},
 									}),
 									(0, a.jsx)('div', {
-										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4',
-										children: s.map((e) => {
-											let { id: t = '', href: s = '', image: r = '', name: n = '', github: o = '', tags: h = [] } = e;
+										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3',
+										children: t.map((e) => {
+											let { id: s = '', href: t = '', image: r = '', name: n = '', github: o = '', tags: h = [] } = e;
 											return (0, a.jsxs)(
 												'div',
 												{
@@ -121,7 +113,7 @@
 														'overflow-hidden rounded-2xl border border-neutral-800 shadow-none shadow-neutral-100/10 transition-all hover:shadow-2xl',
 													children: [
 														(0, a.jsx)(i(), {
-															href: s,
+															href: t,
 															target: '_blank',
 															children: (0, a.jsx)('div', {
 																className: 'aspect-video bg-contain bg-center bg-no-repeat',
@@ -164,7 +156,7 @@
 														}),
 													],
 												},
-												t,
+												s,
 											);
 										}),
 									}),
@@ -175,11 +167,11 @@
 				});
 			};
 		},
-		3351: (e, t, s) => {
+		3351: (e, s, t) => {
 			(window.__NEXT_P = window.__NEXT_P || []).push([
 				'/',
 				function () {
-					return s(80);
+					return t(80);
 				},
 			]);
 		},
