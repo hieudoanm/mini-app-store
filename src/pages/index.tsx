@@ -23,20 +23,12 @@ const HomePage: NextPage = () => {
 			tags: ['cli', 'extension', 'web'],
 		},
 		{
-			id: 'clock',
-			href: 'https://hieudoanm.github.io/clock',
-			github: 'https://github.com/hieudoanm/clock',
-			image: 'https://raw.githubusercontent.com/hieudoanm/clock/refs/heads/master/images/cover.png',
-			name: 'Clock',
-			tags: ['cli', 'web'],
-		},
-		{
-			id: 'converter',
-			href: 'https://hieudoanm.github.io/converter',
-			github: 'https://github.com/hieudoanm/converter',
-			image: 'https://raw.githubusercontent.com/hieudoanm/converter/refs/heads/master/images/cover.png',
-			name: 'Converter',
-			tags: ['cli', 'web'],
+			id: 'editor',
+			href: 'https://hieudoanm.github.io/editor',
+			github: 'https://github.com/hieudoanm/editor',
+			image: 'https://raw.githubusercontent.com/hieudoanm/editor/refs/heads/master/images/cover.png',
+			name: 'editor',
+			tags: ['cli', 'macos', 'web'],
 		},
 		{
 			id: 'gh',
@@ -53,14 +45,6 @@ const HomePage: NextPage = () => {
 			image: 'https://raw.githubusercontent.com/hieudoanm/images/refs/heads/master/images/cover.png',
 			name: 'Images',
 			tags: ['cli', 'web'],
-		},
-		{
-			id: 'markup',
-			href: 'https://hieudoanm.github.io/markup',
-			github: 'https://github.com/hieudoanm/markup',
-			image: 'https://raw.githubusercontent.com/hieudoanm/markup/refs/heads/master/images/cover.png',
-			name: 'Markup',
-			tags: ['macos', 'web'],
 		},
 		{
 			id: 'openapi-to-postmanv2',
@@ -118,7 +102,7 @@ const HomePage: NextPage = () => {
 							setState((previous) => ({ ...previous, query: event.target.value }));
 						}}
 					/>
-					<div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-5">
+					<div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
 						{filteredMiniApps.map(({ id = '', href = '', image = '', name = '', github = '', tags = [] }) => {
 							return (
 								<div
