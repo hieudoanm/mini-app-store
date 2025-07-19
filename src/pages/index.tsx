@@ -70,14 +70,6 @@ const HomePage: NextPage = () => {
 			name: 'Reverse Proxy',
 			tags: ['web'],
 		},
-		{
-			id: 'status',
-			href: 'https://hieudoanm.github.io/status',
-			github: 'https://github.com/hieudoanm/status',
-			image: 'https://raw.githubusercontent.com/hieudoanm/status/refs/heads/master/images/cover.png',
-			name: 'Status',
-			tags: ['cli', 'web'],
-		},
 	];
 
 	const filteredMiniApps: MiniApp[] = miniApps.filter(({ name = '', tags = [] }) => {

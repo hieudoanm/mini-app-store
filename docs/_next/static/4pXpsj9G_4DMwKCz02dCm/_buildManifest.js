@@ -3,7 +3,7 @@
 		__rewrites: { afterFiles: [], beforeFiles: [], fallback: [] },
 		__routerFilterStatic: { numItems: 0, errorRate: 1e-4, numBits: 0, numHashes: null, bitArray: [] },
 		__routerFilterDynamic: { numItems: e, errorRate: 1e-4, numBits: e, numHashes: null, bitArray: [] },
-		'/': [s, 'static/chunks/pages/index-812c7440cc268224.js'],
+		'/': [s, 'static/chunks/pages/index-31ce7ef327d8c7c2.js'],
 		'/404': [s, 'static/chunks/pages/404-9319dd57e494d58f.js'],
 		'/500': [s, 'static/chunks/pages/500-3ecfd5a31982cee5.js'],
 		'/_error': ['static/chunks/pages/_error-4cfc78e25dfb5c4c.js'],

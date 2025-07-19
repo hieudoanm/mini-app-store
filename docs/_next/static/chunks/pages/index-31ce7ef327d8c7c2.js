@@ -5,8 +5,8 @@
 			'use strict';
 			(s.r(t), s.d(t, { default: () => h }));
 			var a = s(5640),
-				i = s(2843),
-				r = s.n(i);
+				r = s(2843),
+				i = s.n(r);
 			let n = () =>
 				(0, a.jsx)('nav', {
 					className: 'border-b border-neutral-800',
@@ -18,7 +18,7 @@
 								(0, a.jsx)('h1', { className: 'font-black', children: 'Store' }),
 								(0, a.jsx)('div', {
 									className: 'flex items-center gap-x-2 md:gap-x-4',
-									children: (0, a.jsx)(r(), { href: 'https://hieudoanm.github.io', children: 'Hieu Doan' }),
+									children: (0, a.jsx)(i(), { href: 'https://hieudoanm.github.io', children: 'Hieu Doan' }),
 								}),
 							],
 						}),
@@ -85,14 +85,6 @@
 							name: 'Reverse Proxy',
 							tags: ['web'],
 						},
-						{
-							id: 'status',
-							href: 'https://hieudoanm.github.io/status',
-							github: 'https://github.com/hieudoanm/status',
-							image: 'https://raw.githubusercontent.com/hieudoanm/status/refs/heads/master/images/cover.png',
-							name: 'Status',
-							tags: ['cli', 'web'],
-						},
 					].filter((t) => {
 						let { name: s = '', tags: a = [] } = t;
 						return (
@@ -121,19 +113,19 @@
 									(0, a.jsx)('div', {
 										className: 'grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4',
 										children: s.map((e) => {
-											let { id: t = '', href: s = '', image: i = '', name: n = '', github: o = '', tags: h = [] } = e;
+											let { id: t = '', href: s = '', image: r = '', name: n = '', github: o = '', tags: h = [] } = e;
 											return (0, a.jsxs)(
 												'div',
 												{
 													className:
 														'overflow-hidden rounded-2xl border border-neutral-800 shadow-none shadow-neutral-100/10 transition-all hover:shadow-2xl',
 													children: [
-														(0, a.jsx)(r(), {
+														(0, a.jsx)(i(), {
 															href: s,
 															target: '_blank',
 															children: (0, a.jsx)('div', {
 																className: 'aspect-video bg-contain bg-center bg-no-repeat',
-																style: { backgroundImage: 'url('.concat(i, ')') },
+																style: { backgroundImage: 'url('.concat(r, ')') },
 															}),
 														}),
 														(0, a.jsxs)('div', {
@@ -146,7 +138,7 @@
 																			className: 'truncate text-base font-medium whitespace-nowrap md:text-lg',
 																			children: n,
 																		}),
-																		(0, a.jsx)(r(), {
+																		(0, a.jsx)(i(), {
 																			href: o,
 																			className: 'text-sm underline underline-offset-4',
 																			target: '_blank',
